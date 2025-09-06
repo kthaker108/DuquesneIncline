@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Photo Gallery</title>
+</head>
+<body>
+
+    <header>
+        <img class="inclineLogo" src="../static/inclineLogo.png" alt="Duquesne Incline Logo">
+        <h1 id="mainTitle">Photo Gallery</h1>
+        <div class="menuIcon" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="webLinks">Home</a></li>
+        <li><a href="aboutUs.html" class="webLinks">About the Incline</a></li>
+        <li><a href="visiting.html" class="webLinks">Visiting Information</a></li>
+        <li><a href="mailingList.html" class="webLinks">Join Our Mailing List</a></li>
+        <li><a href="cityTours.html" class="webLinks">City Tours</a></li>
+        <li><a href="#" class="webLinks">Photo Gallery</a></li>
+    </ul>
+
+    <br><br> 
+    <div class="container">
+        <div class="slideshow-container">
+
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="../static/gallery1.jpg" style="width:100%" alt="Interior of Duquense Incline Cart">
+              <div class="text">Interior of Incline Cart</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="../static/gallery2.jpg" style="width:100%" alt="Outside view of lower building of Duquesne Incline">
+              <div class="text">Outside View of lower building of Duquense Incline</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="../static/gallery3.jpg" style="width:100%" alt="Viewing Deck of Duquensne Incline with a Binocular Viewer for better vision">
+              <div class="text">Viewing Deck with a Binocular Viewer for a better experience</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../static/gallery4.jpg" style="width:100%" alt="Visitors sitting inside the Incline cart while watching the outside view from the window as they go up the tracks">
+                <div class="text">Visitors sitting inside the Incline cart while watching the outside view</div>
+              </div>
+          
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+          
+         
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <br><br>
+        <p class="title">Visit us to make your own memories and add them to the photo gallery!</p>
+    </div>
+
+    
+
+
+    <footer>Copyright © 2009 . All Rights Reserved . <a href="https://docs.google.com/document/d/1ira4a_ri7GdGTHUOQmfMzIMmWs132RdOLTzrWHjnDxY/edit?usp=sharing" target="_blank">Citations Page</a></footer>
+   
+</body>
+</html>
